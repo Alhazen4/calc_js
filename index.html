@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Calculator JS</title>
+    <title>JavaScript Calculator</title>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
 </head>
 <body>
     <div class="calc_body" name="calc_body">
-        <input type="text" class="textview" id="textview" value=""></input>
+        <h3 class="title">JavaScript Calculator</h3>
+        <input type="text" class="textview" id="textview" value="" readonly></input>
         <table>
             <tr>
                 <td><input class="btn" type="button" value="C" onclick="clr()"></input></td>
-                <td><input class="btn" type="button" value="(" onclick="insert()"></input></td>
-                <td><input class="btn" type="button" value=")" onclick="insert()"></input></td>
+                <td><input class="btn" type="button" value="B" onclick="backspace()"></input></td>
+                <td><input class="btn" type="button" value="%" onclick="insert('%')"></input></td>
                 <td><input class="btn" type="button" value="/" onclick="insert('/')"></input></td>
             </tr>
             <tr>
@@ -34,15 +35,14 @@
                 <td><input class="btn" type="button" value="+" onclick="insert('+')"></input></td>
             </tr>
             <tr>
-                <td><input class="btn" type="button" value="B" onclick="backspace()"></input></td>
+                <td><input class="btn" type="button" value="." onclick="insert('.')"></input></td>
                 <td><input class="btn" type="button" value="0" onclick="insert(0)"></input></td>
                 <td><input class="btn" type="button" value="." onclick="insert('.')"></input></td>
                 <td><input class="btn" type="button" value="=" onclick="count()"></input></td>
             </tr>
         </table>
+
+        <a type="button" class="credit_btn" href="https://github.com/Cybernonk404/calc_js" target="_blank">Made by Alhazen4</a>
     </div>
-
-    <div id="test"></div>
-
 </body>
 </html>

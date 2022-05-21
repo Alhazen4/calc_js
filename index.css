@@ -3,15 +3,43 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: -moz-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+}
+
+.title
+{
+    margin-bottom: 34px;
+    margin-left: 4vh;
+    font-size: 30px;
+    color: white;
 }
 
 .btn
 {
-    width: 60px;
-    height: 60px;
+    margin: 5px;
+    width: 80px;
+    height: 80px;
     font-size: 30px;
-    border: 1px solid black;
-    background-color: white;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    color: white;
+    cursor: pointer;
 }
 
 .btn:hover
@@ -19,15 +47,48 @@
     background-color: gainsboro;
 }
 
-.calc_body
-{
-    background-color: aquamarine;
-}
-
 .textview
 {
-    height: 60px;
-    width: 246.5px;
-    font-size: 30px;
-    padding: 10px;
+    margin-bottom: 5px;
+    height: 80px;
+    width: 367px;
+    font-size: 40px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.textview:active
+{
+    border: none;
+    outline: none;
+}
+
+.credit_btn
+{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 11vh;
+
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    color: white;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.credit_btn:hover
+{
+    background-color: gainsboro;
 }
