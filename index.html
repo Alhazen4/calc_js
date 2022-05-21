@@ -10,7 +10,7 @@
         <input type="text" class="textview" id="textview" value=""></input>
         <table>
             <tr>
-                <td><input class="btn" type="button" value="C" onclick="clear()"></input></td>
+                <td><input class="btn" type="button" value="C" onclick="clr()"></input></td>
                 <td><input class="btn" type="button" value="(" onclick="insert()"></input></td>
                 <td><input class="btn" type="button" value=")" onclick="insert()"></input></td>
                 <td><input class="btn" type="button" value="/" onclick="insert('/')"></input></td>
@@ -34,10 +34,10 @@
                 <td><input class="btn" type="button" value="+" onclick="insert('+')"></input></td>
             </tr>
             <tr>
-                <td><input class="btn" type="button" value="." onclick="insert()"></input></td>
+                <td><input class="btn" type="button" value="B" onclick="backspace()"></input></td>
                 <td><input class="btn" type="button" value="0" onclick="insert(0)"></input></td>
-                <td><input class="btn" type="button" value="." onclick="insert()"></input></td>
-                <td><input class="btn" type="button" value="=" onclick="insert('=')"></input></td>
+                <td><input class="btn" type="button" value="." onclick="insert('.')"></input></td>
+                <td><input class="btn" type="button" value="=" onclick="count()"></input></td>
             </tr>
         </table>
     </div>
@@ -45,15 +45,4 @@
     <div id="test"></div>
 
 </body>
-
-<script>
-function insert(num) {
-    document.getElementById('textview').value += num;   
-}
-
-function clear() {
-    document.getElementById('textview').value = '';   
-    document.getElementById('textview').value = 'clear';   
-}
-</script>
 </html>
