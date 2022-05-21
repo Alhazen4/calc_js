@@ -4,4 +4,5 @@ function insert(num) {
 
 function clear() {
     document.getElementById('textview').value = '';   
+    document.getElementById('textview').value = 'clear';   
 }
